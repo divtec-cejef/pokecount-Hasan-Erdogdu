@@ -1,0 +1,108 @@
+body {
+    background-color: #7fac71;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("pokemon-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pokecount {
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 6px solid #7AC74C;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 512px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3a8bbb;
+}
+
+img {
+    height:1em;
+    vertical-align: middle;
+    margin-right:0.5em;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #222;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2f2f2f;
+    width: 60%; /* Ajustez la valeur selon le rendu souhaité */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 150px;
+    font-weight: bold;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    transition: all 0.125s; /* Transition douce pour hover et active */
+}
+button:hover {
+    /* zoom léger du bouton au survol animé et fluide */
+    transform: scale(1.05);
+}
+
+button:active {
+    /* zoom léger du bouton au clic animé et fluide */
+    transform: scale(0.95);
+}
+
+#capturer-btn {
+    background: #ec3131;
+}
+
+#sauvegarder-btn {
+    background: #7cc76c;
+}
+
+#sauvegarde-el {
+    max-width: 200px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    width: 105px;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    border:3px solid rgba(255, 0, 0, 0.8);
+    transition: all 0.1s; /* Transition douce pour hover */
+}
+
+li:hover {
+    transform: scale(1.05); /* Zoom léger au hover */
+}
