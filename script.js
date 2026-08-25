@@ -1,5 +1,6 @@
 const sauvegardeEl = document.getElementById("sauvegarde-el");
 const compteurEl = document.getElementById("compteur-el");
+
 const capturerBtn = document.getElementById("capturer-btn");
 const sauvegarderBtn = document.getElementById("sauvegarder-btn");
 const resetBtn = document.getElementById("reset-btn");
@@ -27,9 +28,10 @@ function capturer() {
 }
 
 function sauvegarder() {
+    const sauvegarde = [];
     let compteurStr = "<li>" + compteur + " Pokemons </li>"
     sauvegardeEl.innerHTML += compteurStr
-    localStorage.setItem("captures", sauvegardeEl.innerHTML);
+    localStorage.setItem("captures", sauvegarde.pop());
     compteur = 0
     compteurEl.textContent = compteur
     compteurEl.style.color = "black"

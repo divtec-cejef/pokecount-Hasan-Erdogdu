@@ -85,6 +85,14 @@ button:active {
     background: #7cc76c;
 }
 
+#reset-btn {
+    background: #202acb;
+}
+
+#supprimer-btn {
+    background: #fe1;
+}
+
 #sauvegarde-el {
     max-width: 200px;
     margin: 0 auto;
