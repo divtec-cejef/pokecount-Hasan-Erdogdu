@@ -10,6 +10,7 @@ sauvegarderBtn.addEventListener("click", sauvegarder);
 resetBtn.addEventListener("click", reset);
 
 let compteur = 0
+let sauvegarderListe = [];
 
 window.addEventListener("load", () => {
     sauvegardeEl.innerHTML = localStorage.getItem("captures") || "";
@@ -27,20 +28,21 @@ function capturer() {
     }
 }
 
+function remettreAZero() {
+    compteur = 0;
+    compteurEl.textContent = compteur;
+    compteurEl.style.color = "black";
+}
+
 function sauvegarder() {
-    const sauvegarde = [];
     let compteurStr = "<li>" + compteur + " Pokemons </li>"
     sauvegardeEl.innerHTML += compteurStr
-    localStorage.setItem("captures", sauvegarde.pop());
-    compteur = 0
-    compteurEl.textContent = compteur
-    compteurEl.style.color = "black"
+    localStorage.setItem("captures", sauvegarderListe.push(compteur));
+    remettreAZero();
 }
 
 function reset() {
     sauvegardeEl.innerHTML = "";
-    compteur = 0
     localStorage.removeItem("captures");
-    compteurEl.textContent = "0";
-    compteurEl.style.color = "black"
+    remettreAZero();
 }
